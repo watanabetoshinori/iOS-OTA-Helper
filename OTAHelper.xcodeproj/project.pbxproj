@@ -1,0 +1,493 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		13A04EBF203A9BAA0009C3AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A04EBE203A9BAA0009C3AD /* AppDelegate.swift */; };
+		13A04EC1203A9BAA0009C3AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A04EC0203A9BAA0009C3AD /* ViewController.swift */; };
+		13A04EC3203A9BAA0009C3AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13A04EC2203A9BAA0009C3AD /* Assets.xcassets */; };
+		13A04EC6203A9BAA0009C3AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13A04EC4203A9BAA0009C3AD /* Main.storyboard */; };
+		13A04ED3203B08890009C3AD /* DragAreaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A04ED2203B08890009C3AD /* DragAreaView.swift */; };
+		13A04ED8203B1EB90009C3AD /* index_template.html in Resources */ = {isa = PBXBuildFile; fileRef = 13A04ED7203B1EB90009C3AD /* index_template.html */; };
+		13D280AB20406B4A003F1847 /* ManifestFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D280AA20406B4A003F1847 /* ManifestFile.swift */; };
+		13D280AD20406B52003F1847 /* HTMLFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D280AC20406B52003F1847 /* HTMLFile.swift */; };
+		13D280AF20406B65003F1847 /* IPAFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D280AE20406B65003F1847 /* IPAFile.swift */; };
+		13E9D0B3203DAE2500CB707A /* UIKitFriendly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E9D0B2203DAE2500CB707A /* UIKitFriendly.swift */; };
+		13E9D0B5203DB83400CB707A /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E9D0B4203DB83400CB707A /* ResultViewController.swift */; };
+		13EF720A203FABE00098C5FC /* LocalServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EF7209203FABE00098C5FC /* LocalServer.swift */; };
+		13EF720C203FAF930098C5FC /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EF720B203FAF930098C5FC /* Result.swift */; };
+		13EF720E203FB1020098C5FC /* SecureTunnel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EF720D203FB1020098C5FC /* SecureTunnel.swift */; };
+		13EF7210203FCCDC0098C5FC /* ErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EF720F203FCCDC0098C5FC /* ErrorViewController.swift */; };
+		98E91B2D502D0D2B55CE01FD /* Pods_OTAHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 227FCBC2A571B39E74969FFF /* Pods_OTAHelper.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		13A04EBB203A9BAA0009C3AD /* OTAHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OTAHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13A04EBE203A9BAA0009C3AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		13A04EC0203A9BAA0009C3AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		13A04EC2203A9BAA0009C3AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		13A04EC5203A9BAA0009C3AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		13A04EC7203A9BAA0009C3AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13A04EC8203A9BAA0009C3AD /* OTAHelper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OTAHelper.entitlements; sourceTree = "<group>"; };
+		13A04ED2203B08890009C3AD /* DragAreaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragAreaView.swift; sourceTree = "<group>"; };
+		13A04ED7203B1EB90009C3AD /* index_template.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index_template.html; sourceTree = "<group>"; };
+		13D280AA20406B4A003F1847 /* ManifestFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManifestFile.swift; sourceTree = "<group>"; };
+		13D280AC20406B52003F1847 /* HTMLFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLFile.swift; sourceTree = "<group>"; };
+		13D280AE20406B65003F1847 /* IPAFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPAFile.swift; sourceTree = "<group>"; };
+		13E9D0B2203DAE2500CB707A /* UIKitFriendly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitFriendly.swift; sourceTree = "<group>"; };
+		13E9D0B4203DB83400CB707A /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		13EF7209203FABE00098C5FC /* LocalServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalServer.swift; sourceTree = "<group>"; };
+		13EF720B203FAF930098C5FC /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		13EF720D203FB1020098C5FC /* SecureTunnel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureTunnel.swift; sourceTree = "<group>"; };
+		13EF720F203FCCDC0098C5FC /* ErrorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewController.swift; sourceTree = "<group>"; };
+		227FCBC2A571B39E74969FFF /* Pods_OTAHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OTAHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		571F676E184F408D250F2C48 /* Pods-OTAHelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OTAHelper.release.xcconfig"; path = "Pods/Target Support Files/Pods-OTAHelper/Pods-OTAHelper.release.xcconfig"; sourceTree = "<group>"; };
+		D25588294F433785B66FF248 /* Pods-OTAHelper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OTAHelper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OTAHelper/Pods-OTAHelper.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13A04EB8203A9BAA0009C3AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98E91B2D502D0D2B55CE01FD /* Pods_OTAHelper.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13A04EB2203A9BAA0009C3AD = {
+			isa = PBXGroup;
+			children = (
+				13A04EBD203A9BAA0009C3AD /* OTAHelper */,
+				13A04EBC203A9BAA0009C3AD /* Products */,
+				86C570605B04153814229CEC /* Pods */,
+				5536FB5F6B59C10337EE769A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		13A04EBC203A9BAA0009C3AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13A04EBB203A9BAA0009C3AD /* OTAHelper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		13A04EBD203A9BAA0009C3AD /* OTAHelper */ = {
+			isa = PBXGroup;
+			children = (
+				13A04ECE203A9DCE0009C3AD /* Modules */,
+				13A04ED4203B11A90009C3AD /* Common */,
+				13A04ED0203A9DE80009C3AD /* Supporting Files */,
+			);
+			path = OTAHelper;
+			sourceTree = "<group>";
+		};
+		13A04ECE203A9DCE0009C3AD /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				13A04EBE203A9BAA0009C3AD /* AppDelegate.swift */,
+				13A04ED1203A9DF30009C3AD /* Main */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		13A04ED0203A9DE80009C3AD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				13A04ED7203B1EB90009C3AD /* index_template.html */,
+				13A04EC2203A9BAA0009C3AD /* Assets.xcassets */,
+				13A04EC7203A9BAA0009C3AD /* Info.plist */,
+				13A04EC8203A9BAA0009C3AD /* OTAHelper.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		13A04ED1203A9DF30009C3AD /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				13A04EC4203A9BAA0009C3AD /* Main.storyboard */,
+				13A04EC0203A9BAA0009C3AD /* ViewController.swift */,
+				13E9D0B4203DB83400CB707A /* ResultViewController.swift */,
+				13EF720F203FCCDC0098C5FC /* ErrorViewController.swift */,
+				13EF7208203FABD20098C5FC /* Model */,
+				13E9D0B6203DB83800CB707A /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		13A04ED4203B11A90009C3AD /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				13E9D0B2203DAE2500CB707A /* UIKitFriendly.swift */,
+				13EF720B203FAF930098C5FC /* Result.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		13E9D0B6203DB83800CB707A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				13A04ED2203B08890009C3AD /* DragAreaView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		13EF7208203FABD20098C5FC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				13EF7209203FABE00098C5FC /* LocalServer.swift */,
+				13EF720D203FB1020098C5FC /* SecureTunnel.swift */,
+				13D280AE20406B65003F1847 /* IPAFile.swift */,
+				13D280AA20406B4A003F1847 /* ManifestFile.swift */,
+				13D280AC20406B52003F1847 /* HTMLFile.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5536FB5F6B59C10337EE769A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				227FCBC2A571B39E74969FFF /* Pods_OTAHelper.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		86C570605B04153814229CEC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D25588294F433785B66FF248 /* Pods-OTAHelper.debug.xcconfig */,
+				571F676E184F408D250F2C48 /* Pods-OTAHelper.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		13A04EBA203A9BAA0009C3AD /* OTAHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13A04ECB203A9BAA0009C3AD /* Build configuration list for PBXNativeTarget "OTAHelper" */;
+			buildPhases = (
+				23D546827B85EA9A0AF12636 /* [CP] Check Pods Manifest.lock */,
+				13A04EB7203A9BAA0009C3AD /* Sources */,
+				13A04EB8203A9BAA0009C3AD /* Frameworks */,
+				13A04EB9203A9BAA0009C3AD /* Resources */,
+				31C7A62CB3171F8F15A217A4 /* [CP] Embed Pods Frameworks */,
+				7B00E44203336058833E83BC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OTAHelper;
+			productName = OTAHelper;
+			productReference = 13A04EBB203A9BAA0009C3AD /* OTAHelper.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		13A04EB3203A9BAA0009C3AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Watanabe Toshinori";
+				TargetAttributes = {
+					13A04EBA203A9BAA0009C3AD = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 13A04EB6203A9BAA0009C3AD /* Build configuration list for PBXProject "OTAHelper" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 13A04EB2203A9BAA0009C3AD;
+			productRefGroup = 13A04EBC203A9BAA0009C3AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13A04EBA203A9BAA0009C3AD /* OTAHelper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		13A04EB9203A9BAA0009C3AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13A04ED8203B1EB90009C3AD /* index_template.html in Resources */,
+				13A04EC3203A9BAA0009C3AD /* Assets.xcassets in Resources */,
+				13A04EC6203A9BAA0009C3AD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		23D546827B85EA9A0AF12636 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OTAHelper-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		31C7A62CB3171F8F15A217A4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-OTAHelper/Pods-OTAHelper-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CustomSegue/CustomSegue.framework",
+				"${BUILT_PRODUCTS_DIR}/ZipArchive/ZipArchive.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CustomSegue.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZipArchive.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OTAHelper/Pods-OTAHelper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B00E44203336058833E83BC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OTAHelper/Pods-OTAHelper-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		13A04EB7203A9BAA0009C3AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13E9D0B5203DB83400CB707A /* ResultViewController.swift in Sources */,
+				13A04ED3203B08890009C3AD /* DragAreaView.swift in Sources */,
+				13D280AD20406B52003F1847 /* HTMLFile.swift in Sources */,
+				13D280AB20406B4A003F1847 /* ManifestFile.swift in Sources */,
+				13D280AF20406B65003F1847 /* IPAFile.swift in Sources */,
+				13EF720E203FB1020098C5FC /* SecureTunnel.swift in Sources */,
+				13EF720A203FABE00098C5FC /* LocalServer.swift in Sources */,
+				13E9D0B3203DAE2500CB707A /* UIKitFriendly.swift in Sources */,
+				13EF720C203FAF930098C5FC /* Result.swift in Sources */,
+				13A04EC1203A9BAA0009C3AD /* ViewController.swift in Sources */,
+				13EF7210203FCCDC0098C5FC /* ErrorViewController.swift in Sources */,
+				13A04EBF203A9BAA0009C3AD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		13A04EC4203A9BAA0009C3AD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13A04EC5203A9BAA0009C3AD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		13A04EC9203A9BAA0009C3AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		13A04ECA203A9BAA0009C3AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		13A04ECC203A9BAA0009C3AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D25588294F433785B66FF248 /* Pods-OTAHelper.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = OTAHelper/OTAHelper.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = OTAHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.OTAHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		13A04ECD203A9BAA0009C3AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 571F676E184F408D250F2C48 /* Pods-OTAHelper.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = OTAHelper/OTAHelper.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = OTAHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.OTAHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		13A04EB6203A9BAA0009C3AD /* Build configuration list for PBXProject "OTAHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13A04EC9203A9BAA0009C3AD /* Debug */,
+				13A04ECA203A9BAA0009C3AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13A04ECB203A9BAA0009C3AD /* Build configuration list for PBXNativeTarget "OTAHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13A04ECC203A9BAA0009C3AD /* Debug */,
+				13A04ECD203A9BAA0009C3AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 13A04EB3203A9BAA0009C3AD /* Project object */;
+}

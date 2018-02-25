@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13771"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Application-->
+        <scene sceneID="JPo-4y-FX3">
+            <objects>
+                <application id="hnw-xV-0zn" sceneMemberID="viewController">
+                    <menu key="mainMenu" title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
+                        <items>
+                            <menuItem title="OTAHelper" id="1Xt-HY-uBw">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="OTAHelper" systemMenu="apple" id="uQy-DD-JDr">
+                                    <items>
+                                        <menuItem title="About OTAHelper" id="5kV-Vb-QxS">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="Exp-CZ-Vem"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
+                                        <menuItem title="Preferences…" keyEquivalent="," id="BOF-NM-1cW"/>
+                                        <menuItem isSeparatorItem="YES" id="wFC-TO-SCJ"/>
+                                        <menuItem title="Services" id="NMo-om-nkz">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
+                                        <menuItem title="Hide OTAHelper" keyEquivalent="h" id="Olw-nP-bQN">
+                                            <connections>
+                                                <action selector="hide:" target="Ady-hI-5gd" id="PnN-Uc-m68"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Hide Others" keyEquivalent="h" id="Vdr-fp-XzO">
+                                            <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                            <connections>
+                                                <action selector="hideOtherApplications:" target="Ady-hI-5gd" id="VT4-aY-XCT"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Show All" id="Kd2-mp-pUS">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="unhideAllApplications:" target="Ady-hI-5gd" id="Dhg-Le-xox"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
+                                        <menuItem title="Quit OTAHelper" keyEquivalent="q" id="4sb-4s-VLi">
+                                            <connections>
+                                                <action selector="terminate:" target="Ady-hI-5gd" id="Te7-pn-YzF"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="Window" id="aUF-d1-5bR">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Window" systemMenu="window" id="Td7-aD-5lo">
+                                    <items>
+                                        <menuItem title="Minimize" keyEquivalent="m" id="OY7-WF-poV">
+                                            <connections>
+                                                <action selector="performMiniaturize:" target="Ady-hI-5gd" id="VwT-WD-YPe"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Zoom" id="R4o-n2-Eq4">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="performZoom:" target="Ady-hI-5gd" id="DIl-cC-cCs"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="eu3-7i-yIM"/>
+                                        <menuItem title="Bring All to Front" id="LE2-aR-0XJ">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="arrangeInFront:" target="Ady-hI-5gd" id="DRN-fu-gQh"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="Help" id="wpr-3q-Mcd">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Help" systemMenu="help" id="F2S-fz-NVQ">
+                                    <items>
+                                        <menuItem title="OTAHelper Help" keyEquivalent="?" id="FKE-Sm-Kum">
+                                            <connections>
+                                                <action selector="showHelp:" target="Ady-hI-5gd" id="y7X-2Q-9no"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
+                    </connections>
+                </application>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="OTAHelper" customModuleProvider="target"/>
+                <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+                <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="76" y="-161"/>
+        </scene>
+        <!--Window Controller-->
+        <scene sceneID="R2V-B0-nI4">
+            <objects>
+                <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
+                    <window key="window" title="OTA Helper" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <rect key="contentRect" x="196" y="240" width="260" height="420"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                        <value key="minSize" type="size" width="260" height="420"/>
+                        <value key="maxSize" type="size" width="260" height="420"/>
+                        <connections>
+                            <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="XfG-lQ-9wD" kind="relationship" relationship="window.shadowedContentViewController" id="cq2-FE-JQM"/>
+                    </connections>
+                </windowController>
+                <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75" y="250"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hIz-AP-VOD">
+            <objects>
+                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="OTAHelper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
+                        <rect key="frame" x="0.0" y="0.0" width="260" height="420"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <box boxType="custom" borderType="none" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="x1Q-ON-rri">
+                                <rect key="frame" x="0.0" y="0.0" width="260" height="420"/>
+                                <view key="contentView" id="bGc-q1-L1I">
+                                    <rect key="frame" x="0.0" y="0.0" width="260" height="420"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <progressIndicator wantsLayer="YES" horizontalHuggingPriority="750" verticalHuggingPriority="750" maxValue="100" bezeled="NO" indeterminate="YES" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="jEm-Gh-BIE">
+                                            <rect key="frame" x="100" y="280" width="60" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="60" id="ETh-Tq-Bzc"/>
+                                                <constraint firstAttribute="width" constant="60" id="k2b-Vd-xKT"/>
+                                            </constraints>
+                                        </progressIndicator>
+                                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LHT-5c-qrM">
+                                            <rect key="frame" x="80" y="259" width="101" height="101"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="101" id="8oo-JP-1C1"/>
+                                                <constraint firstAttribute="width" constant="101" id="xFL-6P-Goi"/>
+                                            </constraints>
+                                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" image="DragArea" id="OdH-9m-4b0"/>
+                                        </imageView>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="vG6-jc-Sjw" customClass="NSLabel" customModule="OTAHelper" customModuleProvider="target">
+                                            <rect key="frame" x="18" y="218" width="224" height="21"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Drag ipa file here" id="vN3-R8-2zG">
+                                                <font key="font" metaFont="system" size="17"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <box boxType="custom" cornerRadius="4" translatesAutoresizingMaskIntoConstraints="NO" id="wqx-Fp-fmy">
+                                            <rect key="frame" x="20" y="20" width="220" height="130"/>
+                                            <view key="contentView" id="do3-p2-GlR">
+                                                <rect key="frame" x="1" y="1" width="218" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <subviews>
+                                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="iBq-aE-C5y">
+                                                        <rect key="frame" x="6" y="103" width="206" height="17"/>
+                                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Username" id="Fwa-hR-hUh">
+                                                            <font key="font" metaFont="system"/>
+                                                            <color key="textColor" red="1" green="1" blue="1" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                        </textFieldCell>
+                                                    </textField>
+                                                    <textField focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Hra-gM-PIp">
+                                                        <rect key="frame" x="20" y="73" width="178" height="22"/>
+                                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" focusRingType="none" placeholderString="Optional" drawsBackground="YES" id="76n-8a-ODT">
+                                                            <font key="font" metaFont="system"/>
+                                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                        </textFieldCell>
+                                                    </textField>
+                                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5oH-Ga-kFQ">
+                                                        <rect key="frame" x="6" y="48" width="206" height="17"/>
+                                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Password" id="62C-P8-qhR">
+                                                            <font key="font" metaFont="system"/>
+                                                            <color key="textColor" red="1" green="1" blue="1" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                        </textFieldCell>
+                                                    </textField>
+                                                    <textField focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="YT0-5J-up1">
+                                                        <rect key="frame" x="20" y="18" width="178" height="22"/>
+                                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" focusRingType="none" placeholderString="Optional" drawsBackground="YES" id="xpU-Sj-kdy">
+                                                            <font key="font" metaFont="system"/>
+                                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                        </textFieldCell>
+                                                    </textField>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="Hra-gM-PIp" secondAttribute="trailing" constant="20" id="47c-wm-39b"/>
+                                                    <constraint firstItem="5oH-Ga-kFQ" firstAttribute="leading" secondItem="do3-p2-GlR" secondAttribute="leading" constant="8" id="78g-uT-GVC"/>
+                                                    <constraint firstAttribute="trailing" secondItem="iBq-aE-C5y" secondAttribute="trailing" constant="8" id="DSd-3K-up0"/>
+                                                    <constraint firstItem="Hra-gM-PIp" firstAttribute="leading" secondItem="do3-p2-GlR" secondAttribute="leading" constant="20" id="F8L-SV-EFZ"/>
+                                                    <constraint firstItem="YT0-5J-up1" firstAttribute="leading" secondItem="do3-p2-GlR" secondAttribute="leading" constant="20" id="PWp-a8-6xp"/>
+                                                    <constraint firstItem="iBq-aE-C5y" firstAttribute="leading" secondItem="do3-p2-GlR" secondAttribute="leading" constant="8" id="TiO-ZY-pQe"/>
+                                                    <constraint firstItem="YT0-5J-up1" firstAttribute="top" secondItem="5oH-Ga-kFQ" secondAttribute="bottom" constant="8" id="Xe5-R4-czb"/>
+                                                    <constraint firstAttribute="trailing" secondItem="5oH-Ga-kFQ" secondAttribute="trailing" constant="8" id="aNI-KO-wsp"/>
+                                                    <constraint firstAttribute="trailing" secondItem="YT0-5J-up1" secondAttribute="trailing" constant="20" id="fdP-gK-xHW"/>
+                                                    <constraint firstItem="5oH-Ga-kFQ" firstAttribute="top" secondItem="Hra-gM-PIp" secondAttribute="bottom" constant="8" id="hFr-Zn-kca"/>
+                                                    <constraint firstItem="Hra-gM-PIp" firstAttribute="top" secondItem="iBq-aE-C5y" secondAttribute="bottom" constant="8" id="rqJ-v9-1em"/>
+                                                    <constraint firstItem="iBq-aE-C5y" firstAttribute="top" secondItem="do3-p2-GlR" secondAttribute="top" constant="8" id="svm-c8-BB3"/>
+                                                </constraints>
+                                            </view>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="130" id="Wdd-Be-ihZ"/>
+                                            </constraints>
+                                            <color key="borderColor" white="0.0" alpha="0.1083561644" colorSpace="calibratedWhite"/>
+                                            <color key="fillColor" white="0.0" alpha="0.1083561643835616" colorSpace="calibratedWhite"/>
+                                        </box>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="kFu-jL-d7u">
+                                            <rect key="frame" x="28" y="155" width="204" height="14"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Basic Auth Settings" id="dFC-gR-7Zb">
+                                                <font key="font" metaFont="smallSystem"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <customView translatesAutoresizingMaskIntoConstraints="NO" id="nk5-hQ-ESZ" customClass="DragAreaView" customModule="OTAHelper" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="180" width="260" height="240"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="240" id="gUJ-ks-7ss"/>
+                                            </constraints>
+                                        </customView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="jEm-Gh-BIE" firstAttribute="centerX" secondItem="bGc-q1-L1I" secondAttribute="centerX" id="8HU-cA-Not"/>
+                                        <constraint firstAttribute="trailing" secondItem="nk5-hQ-ESZ" secondAttribute="trailing" id="HWe-AZ-0rC"/>
+                                        <constraint firstAttribute="trailing" secondItem="kFu-jL-d7u" secondAttribute="trailing" constant="30" id="JeJ-6U-4bo"/>
+                                        <constraint firstItem="wqx-Fp-fmy" firstAttribute="top" secondItem="kFu-jL-d7u" secondAttribute="bottom" constant="5" id="LeF-iZ-VSe"/>
+                                        <constraint firstItem="wqx-Fp-fmy" firstAttribute="leading" secondItem="bGc-q1-L1I" secondAttribute="leading" constant="20" id="UeV-Kg-DeJ"/>
+                                        <constraint firstItem="nk5-hQ-ESZ" firstAttribute="leading" secondItem="bGc-q1-L1I" secondAttribute="leading" id="ZVP-nZ-h85"/>
+                                        <constraint firstItem="LHT-5c-qrM" firstAttribute="centerX" secondItem="bGc-q1-L1I" secondAttribute="centerX" id="aEl-Is-hx3"/>
+                                        <constraint firstItem="LHT-5c-qrM" firstAttribute="top" secondItem="bGc-q1-L1I" secondAttribute="top" constant="60" id="blN-rm-aoH"/>
+                                        <constraint firstItem="vG6-jc-Sjw" firstAttribute="leading" secondItem="bGc-q1-L1I" secondAttribute="leading" constant="20" id="eIa-hk-NOJ"/>
+                                        <constraint firstAttribute="trailing" secondItem="wqx-Fp-fmy" secondAttribute="trailing" constant="20" id="fIT-Bl-WKI"/>
+                                        <constraint firstAttribute="trailing" secondItem="vG6-jc-Sjw" secondAttribute="trailing" constant="20" id="fb1-ba-YxV"/>
+                                        <constraint firstItem="vG6-jc-Sjw" firstAttribute="centerX" secondItem="bGc-q1-L1I" secondAttribute="centerX" id="gqD-RO-hvk"/>
+                                        <constraint firstAttribute="bottom" secondItem="wqx-Fp-fmy" secondAttribute="bottom" constant="20" id="jPj-MU-CyS"/>
+                                        <constraint firstItem="jEm-Gh-BIE" firstAttribute="top" secondItem="bGc-q1-L1I" secondAttribute="top" constant="80" id="qLd-Sp-ayR"/>
+                                        <constraint firstItem="kFu-jL-d7u" firstAttribute="leading" secondItem="bGc-q1-L1I" secondAttribute="leading" constant="30" id="r45-Qw-Z7y"/>
+                                        <constraint firstItem="vG6-jc-Sjw" firstAttribute="top" secondItem="LHT-5c-qrM" secondAttribute="bottom" constant="20" id="wfc-W9-BYC"/>
+                                        <constraint firstItem="nk5-hQ-ESZ" firstAttribute="top" secondItem="bGc-q1-L1I" secondAttribute="top" id="yG5-CI-Vfr"/>
+                                    </constraints>
+                                </view>
+                                <color key="fillColor" red="0.18039216101169586" green="0.18823529779911041" blue="0.19607843458652496" alpha="1" colorSpace="calibratedRGB"/>
+                            </box>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="x1Q-ON-rri" secondAttribute="trailing" id="82Z-yD-aoU"/>
+                            <constraint firstItem="x1Q-ON-rri" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="8Uj-vq-Rgh"/>
+                            <constraint firstAttribute="bottom" secondItem="x1Q-ON-rri" secondAttribute="bottom" id="R20-M3-JzQ"/>
+                            <constraint firstItem="x1Q-ON-rri" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="ahV-VM-Voq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dragAreaImage" destination="LHT-5c-qrM" id="JYn-cJ-jhc"/>
+                        <outlet property="dragAreaView" destination="nk5-hQ-ESZ" id="zZo-1C-NLB"/>
+                        <outlet property="label" destination="vG6-jc-Sjw" id="77c-2v-eCm"/>
+                        <outlet property="passwordField" destination="YT0-5J-up1" id="cdu-R2-O1k"/>
+                        <outlet property="progressIndicator" destination="jEm-Gh-BIE" id="b4C-IR-dXT"/>
+                        <outlet property="usernameField" destination="Hra-gM-PIp" id="Chd-di-vLW"/>
+                        <segue destination="lGI-T0-dmm" kind="custom" identifier="ShowResultScreen" customClass="CrossfadeSegue" customModule="CustomSegue" id="1ne-50-HhO"/>
+                        <segue destination="Jtb-75-qCw" kind="custom" identifier="ShowErrorScreen" customClass="CrossfadeSegue" customModule="CustomSegue" id="RU0-nc-VIz"/>
+                    </connections>
+                </viewController>
+                <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="503" y="250"/>
+        </scene>
+        <!--Result View Controller-->
+        <scene sceneID="5QJ-6E-rH0">
+            <objects>
+                <viewController id="lGI-T0-dmm" customClass="ResultViewController" customModule="OTAHelper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" wantsLayer="YES" id="SmW-1x-paN">
+                        <rect key="frame" x="0.0" y="0.0" width="260" height="420"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <box boxType="custom" borderType="none" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="NWk-UJ-np4">
+                                <rect key="frame" x="0.0" y="0.0" width="260" height="420"/>
+                                <view key="contentView" id="mve-UW-cAa">
+                                    <rect key="frame" x="0.0" y="0.0" width="260" height="420"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="TI6-AS-UHJ" customClass="NSLabel" customModule="OTAHelper" customModuleProvider="target">
+                                            <rect key="frame" x="18" y="379" width="224" height="21"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="OTA Server Running" id="mS3-jb-RlQ">
+                                                <font key="font" metaFont="system" size="17"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5FG-U5-miN" customClass="NSLabel" customModule="OTAHelper" customModuleProvider="target">
+                                            <rect key="frame" x="23" y="315" width="211" height="34"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" allowsUndo="NO" sendsActionOnEndEditing="YES" alignment="center" title="Open the following URL  on iOS device and install the app!" id="jMy-pG-2G6">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" red="0.74901960784313726" green="0.74901960784313726" blue="0.74901960784313726" alpha="0.85254173801369859" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ub9-wn-i9A" customClass="NSLabel" customModule="OTAHelper" customModuleProvider="target">
+                                            <rect key="frame" x="18" y="278" width="224" height="17"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" alignment="center" title="http://xxxxxxxx.ngrok.io" id="pyT-o4-aZX">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" red="0.74901960779999999" green="0.74901960779999999" blue="0.74901960779999999" alpha="0.85254173799999999" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6qQ-VJ-lNG">
+                                            <rect key="frame" x="130" y="258" width="0.0" height="0.0"/>
+                                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="y6G-GU-jPH"/>
+                                        </imageView>
+                                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="nZL-dJ-rPA">
+                                            <rect key="frame" x="60" y="23" width="141" height="32"/>
+                                            <buttonCell key="cell" type="push" title="Stop OTA Server" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="eVq-zk-6oZ">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="stopServerTapped:" target="lGI-T0-dmm" id="cTQ-yb-P3j"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="6qQ-VJ-lNG" firstAttribute="top" secondItem="Ub9-wn-i9A" secondAttribute="bottom" constant="20" id="0Yz-9P-ieA"/>
+                                        <constraint firstItem="5FG-U5-miN" firstAttribute="centerX" secondItem="mve-UW-cAa" secondAttribute="centerX" id="Bfc-9o-cuo"/>
+                                        <constraint firstItem="5FG-U5-miN" firstAttribute="leading" secondItem="mve-UW-cAa" secondAttribute="leading" constant="20" id="BhA-od-XOq"/>
+                                        <constraint firstItem="TI6-AS-UHJ" firstAttribute="top" secondItem="mve-UW-cAa" secondAttribute="top" constant="20" id="Gwd-BU-EQg"/>
+                                        <constraint firstAttribute="bottom" secondItem="nZL-dJ-rPA" secondAttribute="bottom" constant="30" id="JXD-uI-YEf"/>
+                                        <constraint firstAttribute="trailing" secondItem="TI6-AS-UHJ" secondAttribute="trailing" constant="20" id="Pew-mv-Mis"/>
+                                        <constraint firstItem="Ub9-wn-i9A" firstAttribute="leading" secondItem="mve-UW-cAa" secondAttribute="leading" constant="20" id="QXv-YG-u8t"/>
+                                        <constraint firstItem="Ub9-wn-i9A" firstAttribute="top" secondItem="5FG-U5-miN" secondAttribute="bottom" constant="20" id="S9A-qp-fpy"/>
+                                        <constraint firstItem="5FG-U5-miN" firstAttribute="top" secondItem="TI6-AS-UHJ" secondAttribute="bottom" constant="30" id="aRY-sN-k4v"/>
+                                        <constraint firstItem="6qQ-VJ-lNG" firstAttribute="centerX" secondItem="mve-UW-cAa" secondAttribute="centerX" id="bda-Oq-2bu"/>
+                                        <constraint firstAttribute="trailing" secondItem="Ub9-wn-i9A" secondAttribute="trailing" constant="20" id="glV-u9-jSg"/>
+                                        <constraint firstItem="nZL-dJ-rPA" firstAttribute="top" relation="greaterThanOrEqual" secondItem="6qQ-VJ-lNG" secondAttribute="bottom" constant="20" id="jln-tN-h73"/>
+                                        <constraint firstItem="nZL-dJ-rPA" firstAttribute="centerX" secondItem="mve-UW-cAa" secondAttribute="centerX" id="mLw-aT-1SL"/>
+                                        <constraint firstItem="TI6-AS-UHJ" firstAttribute="leading" secondItem="mve-UW-cAa" secondAttribute="leading" constant="20" id="qZb-AB-cJX"/>
+                                        <constraint firstItem="Ub9-wn-i9A" firstAttribute="centerX" secondItem="mve-UW-cAa" secondAttribute="centerX" id="vRD-Hr-6Zl"/>
+                                        <constraint firstAttribute="trailing" secondItem="5FG-U5-miN" secondAttribute="trailing" constant="20" id="wf7-d8-PHG"/>
+                                    </constraints>
+                                </view>
+                                <color key="fillColor" red="0.180392161" green="0.18823529780000001" blue="0.19607843459999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </box>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="NWk-UJ-np4" secondAttribute="bottom" id="TwD-Rx-AmR"/>
+                            <constraint firstItem="NWk-UJ-np4" firstAttribute="leading" secondItem="SmW-1x-paN" secondAttribute="leading" id="dmK-To-Q3g"/>
+                            <constraint firstAttribute="trailing" secondItem="NWk-UJ-np4" secondAttribute="trailing" id="mXd-I3-JcZ"/>
+                            <constraint firstItem="NWk-UJ-np4" firstAttribute="top" secondItem="SmW-1x-paN" secondAttribute="top" id="ntK-Kv-ua3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="publicURLLabel" destination="Ub9-wn-i9A" id="0Yl-5y-eQa"/>
+                        <outlet property="qrCodeImageView" destination="6qQ-VJ-lNG" id="3QH-RM-Bav"/>
+                    </connections>
+                </viewController>
+                <customObject id="1Hp-AM-iKC" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928" y="250"/>
+        </scene>
+        <!--Error View Controller-->
+        <scene sceneID="tX4-g5-2Ka">
+            <objects>
+                <viewController id="Jtb-75-qCw" customClass="ErrorViewController" customModule="OTAHelper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" wantsLayer="YES" id="5Bd-qU-bbs">
+                        <rect key="frame" x="0.0" y="0.0" width="260" height="460"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <box boxType="custom" borderType="none" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="Vu0-Sd-uNS">
+                                <rect key="frame" x="0.0" y="0.0" width="260" height="460"/>
+                                <view key="contentView" id="Si3-pX-MRU">
+                                    <rect key="frame" x="0.0" y="0.0" width="260" height="460"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yNg-ZW-QSO">
+                                            <rect key="frame" x="80" y="299" width="101" height="101"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="101" id="oNX-vJ-bKZ"/>
+                                                <constraint firstAttribute="width" constant="101" id="qbh-ZP-6CM"/>
+                                            </constraints>
+                                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" image="Error" id="j9q-9V-6Aq"/>
+                                        </imageView>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="TwK-db-0cz" customClass="NSLabel" customModule="OTAHelper" customModuleProvider="target">
+                                            <rect key="frame" x="33" y="258" width="195" height="21"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" allowsUndo="NO" sendsActionOnEndEditing="YES" alignment="center" title="Failed to run OTA server." id="ikU-fB-pGi">
+                                                <font key="font" metaFont="system" size="17"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="btM-g4-CJD" customClass="NSLabel" customModule="OTAHelper" customModuleProvider="target">
+                                            <rect key="frame" x="18" y="221" width="224" height="17"/>
+                                            <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="error description" id="JBN-Jd-dro">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" red="0.74901960779999999" green="0.74901960779999999" blue="0.74901960779999999" alpha="0.85254173799999999" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="jhg-r6-gRw">
+                                            <rect key="frame" x="87" y="23" width="87" height="32"/>
+                                            <buttonCell key="cell" type="push" title="Dismiss" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ETd-Co-lrm">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="dismissTapped:" target="Jtb-75-qCw" id="hbp-Dg-8Yu"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="jhg-r6-gRw" secondAttribute="bottom" constant="30" id="0Dk-ui-Y45"/>
+                                        <constraint firstItem="jhg-r6-gRw" firstAttribute="centerX" secondItem="Si3-pX-MRU" secondAttribute="centerX" id="Cgv-GT-fia"/>
+                                        <constraint firstItem="yNg-ZW-QSO" firstAttribute="top" secondItem="Si3-pX-MRU" secondAttribute="top" constant="60" id="CoI-8I-MI1"/>
+                                        <constraint firstItem="btM-g4-CJD" firstAttribute="top" secondItem="TwK-db-0cz" secondAttribute="bottom" constant="20" id="DR1-0O-JG3"/>
+                                        <constraint firstItem="TwK-db-0cz" firstAttribute="centerX" secondItem="Si3-pX-MRU" secondAttribute="centerX" id="Ngl-qk-klm"/>
+                                        <constraint firstItem="yNg-ZW-QSO" firstAttribute="centerX" secondItem="Si3-pX-MRU" secondAttribute="centerX" id="Xc4-H5-XCN"/>
+                                        <constraint firstAttribute="trailing" secondItem="btM-g4-CJD" secondAttribute="trailing" constant="20" id="fBE-qe-BD6"/>
+                                        <constraint firstItem="jhg-r6-gRw" firstAttribute="top" relation="greaterThanOrEqual" secondItem="btM-g4-CJD" secondAttribute="bottom" constant="20" id="g3r-PQ-4QQ"/>
+                                        <constraint firstItem="btM-g4-CJD" firstAttribute="centerX" secondItem="Si3-pX-MRU" secondAttribute="centerX" id="tic-GT-x09"/>
+                                        <constraint firstItem="TwK-db-0cz" firstAttribute="top" secondItem="yNg-ZW-QSO" secondAttribute="bottom" constant="20" id="u7B-dP-g2d"/>
+                                        <constraint firstItem="btM-g4-CJD" firstAttribute="leading" secondItem="Si3-pX-MRU" secondAttribute="leading" constant="20" id="ziv-XL-hBo"/>
+                                    </constraints>
+                                </view>
+                                <color key="fillColor" red="0.180392161" green="0.18823529780000001" blue="0.19607843459999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </box>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Vu0-Sd-uNS" firstAttribute="top" secondItem="5Bd-qU-bbs" secondAttribute="top" id="GZ2-xm-sZn"/>
+                            <constraint firstAttribute="trailing" secondItem="Vu0-Sd-uNS" secondAttribute="trailing" id="S5d-er-HKK"/>
+                            <constraint firstItem="Vu0-Sd-uNS" firstAttribute="leading" secondItem="5Bd-qU-bbs" secondAttribute="leading" id="hQ8-Re-lNn"/>
+                            <constraint firstAttribute="bottom" secondItem="Vu0-Sd-uNS" secondAttribute="bottom" id="itb-nG-eIc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="errorDescriptionLabel" destination="btM-g4-CJD" id="ESr-Bk-cpP"/>
+                    </connections>
+                </viewController>
+                <customObject id="BYG-L3-edP" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928" y="878"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="DragArea" width="101" height="101"/>
+        <image name="Error" width="101" height="91"/>
+    </resources>
+</document>
