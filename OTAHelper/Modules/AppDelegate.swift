@@ -20,5 +20,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         LocalServer.shared.stop()
     }
 
+    func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
+        return true
+    }
+
 }
 
