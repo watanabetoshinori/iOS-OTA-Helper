@@ -32,14 +32,31 @@ class LocalServer: NSObject {
         DispatchQueue.global(qos: .background).async {
             self.process = Process()
             self.process!.currentDirectoryURL = rootDirectory
-            self.process!.launchPath = "/bin/sh"
-            self.process!.arguments = ["-c", "python -m SimpleHTTPServer 8080;"]
+            self.process!.launchPath = "/bin/bash"
+            self.process!.arguments = ["-l", "-c", "python -m SimpleHTTPServer 8080;"]
 
             self.captureOutput(self.process!)
 
             self.process!.launch()
 
-            self.process!.waitUntilExit()
+            // Wait 1.0 sec to connect local server
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                self.loadURL(completion: { (result) in
+                    DispatchQueue.main.async {
+                        if result {
+                            completion(.success(true))
+
+                        } else {
+                            let error = NSError(domain: "otahelper",
+                                                code: 0,
+                                                userInfo: [NSLocalizedDescriptionKey: "Failed to launch local server."])
+                            completion(.failure(error))
+                        }
+
+                        self.completion = nil
+                    }
+                })
+            }
         }
     }
 
@@ -48,12 +65,12 @@ class LocalServer: NSObject {
 
         DispatchQueue.main.async {
             if let completion = self.completion {
-                if string.hasPrefix("Serving HTTP") {
-                    completion(.success(true))
+                if string.hasPrefix("Serving HTTP") || string.hasPrefix("127.0.0.1") {
+                    return
                 } else {
                     let error = NSError(domain: "otahelper",
                                         code: 0,
-                                        userInfo: [NSLocalizedDescriptionKey: "Failed to launch local server. Local server address(8080) already in use."])
+                                        userInfo: [NSLocalizedDescriptionKey: "Failed to launch local server."])
                     completion(.failure(error))
                 }
 
@@ -87,6 +104,24 @@ class LocalServer: NSObject {
 
             self.outputPipe!.fileHandleForReading.waitForDataInBackgroundAndNotify()
         }
+    }
+
+    // MARK: - Load Local server
+
+    func loadURL(completion: @escaping (Bool) -> Void) {
+        let url = URL(string: "http://127.0.0.1:8080/")!
+        let request = URLRequest(url: url)
+
+        let task = URLSession.shared.dataTask(with: request) { (data, respinse, error) in
+            if data != nil {
+                completion(true)
+                return
+            }
+
+            completion(false)
+        }
+
+        task.resume()
     }
 
 }

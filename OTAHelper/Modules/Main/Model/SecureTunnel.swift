@@ -29,18 +29,18 @@ class SecureTunnel: NSObject {
     func run(with rootDirectory: URL, username: String, password: String, completion: @escaping (Result<URL>) -> Void) {
         self.completion = completion
 
-        let arguments: [String] = {
+        let argument: String = {
             if username.isEmpty == false, password.isEmpty == false {
-                return ["http", "-bind-tls=true", "-auth=\"\(username):\(password)\"", "8080"]
+                return "/usr/local/bin/ngrok http -bind-tls=true -auth=\"\(username):\(password)\" 8080;"
             }
-            return ["http", "-bind-tls=true", "8080"]
+            return "/usr/local/bin/ngrok http -bind-tls=true 8080;"
         }()
 
         DispatchQueue.global(qos: .background).async {
             self.process = Process()
             self.process!.currentDirectoryURL = rootDirectory
-            self.process!.launchPath = "/usr/local/bin/ngrok"
-            self.process!.arguments = arguments
+            self.process!.launchPath = "/bin/bash"
+            self.process!.arguments = ["-l", "-c", argument]
 
             self.captureOutput(self.process!)
 
