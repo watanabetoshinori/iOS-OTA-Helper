@@ -1,12 +1,7 @@
 # iOS OTA Helper
 
-iOS OTA Helper is MacOS X app designed to simplify sharing iOS apps via Over the Air.
+iOS OTA Helper is macOS app designed to simplify sharing iOS apps via Over the Air.
 
-- [Features](#features)
-- [Requirements](#requirements)
-- [Installation](#installation)
-- [Usage](#usage)
-- [License](#license)
 
 ## Features
 
@@ -18,6 +13,7 @@ iOS OTA Helper is MacOS X app designed to simplify sharing iOS apps via Over the
 
 <img  src="https://raw.githubusercontent.com/watanabetoshinori/iOS-OTA-Helper/master/Preview/1.png" width="223" height="332"> <img  src="https://raw.githubusercontent.com/watanabetoshinori/iOS-OTA-Helper/master/Preview/2.png" width="223" height="332">
 
+
 ## Requirements
 
 - macOS 10.13+
@@ -27,6 +23,7 @@ iOS OTA Helper is MacOS X app designed to simplify sharing iOS apps via Over the
 - Python (macOS system default)
 - ngrok ([https://ngrok.com](https://ngrok.com))
 
+
 ## Installation
 
 This app required [ngrok](https://ngrok.com). You can install it by [homebrew](https://brew.sh):
@@ -34,6 +31,10 @@ This app required [ngrok](https://ngrok.com). You can install it by [homebrew](h
 ```bash
 $ brew cask install ngrok
 ```
+
+An ngrok account is required to use the password protection function. 
+For details, please refer to [the ngrok documentation](https://ngrok.com/docs#authtoken).
+
 
 ## Usage
 
@@ -43,12 +44,14 @@ $ brew cask install ngrok
 
 3. Scan QR code by iOS device and install the app!
 
+
 ## License
 
 iOS OTA Helper is released under the MIT license. [See LICENSE](https://github.com/watanabetoshinori/iOS-OTA-Helper/blob/master/LICENSE) for details.
 
-# Acknowledgements
 
-Some function of this app is based on the following app. Thank you for a great code:
+## Acknowledgements
 
-- [iOS Beta Builder](https://github.com/HunterHillegas/iOS-BetaBuilder)
+Some function of this app is based on the following app:
+
+- [iOS Beta Builder](https://github.com/HunterHillegas/iOS-BetaBuilder) for installation page design.
