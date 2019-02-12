@@ -46,8 +46,8 @@ class SecureTunnel: NSObject {
 
             self.process!.launch()
 
-            // Wait 2.0 sec to connect ngrok
-            DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+            // Wait 5.0 sec to connect ngrok
+            DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
                 self.loadPublicURL(completion: { (url) in
                     DispatchQueue.main.async {
                         if let url = url {

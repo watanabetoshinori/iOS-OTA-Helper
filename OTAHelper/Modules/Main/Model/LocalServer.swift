@@ -39,8 +39,8 @@ class LocalServer: NSObject {
 
             self.process!.launch()
 
-            // Wait 1.0 sec to connect local server
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+            // Wait 5.0 sec to connect local server
+            DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
                 self.loadURL(completion: { (result) in
                     DispatchQueue.main.async {
                         if result {
